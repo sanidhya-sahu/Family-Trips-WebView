@@ -1,0 +1,236 @@
+    ::-webkit-scrollbar {
+        width: 11px;
+    }
+
+    /* ::-webkit-scrollbar-button{
+        background:#FAD;
+    } */
+    ::-webkit-scrollbar-thumb {
+        background: #FAD;
+        border-radius: 5px;
+        border: 2px solid #FAD;
+        box-shadow: inset 2px 2px 3px #F08;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #F08;
+    }
+
+    body {
+        background-color: #F08;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    nav {
+        background-color: rgba(233, 20, 126, 0);
+        height: 65px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+
+    header {
+        position: sticky;
+        top: 0px;
+        height: 10vh;
+    }
+
+    header nav ul {
+        float: right;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+
+    .topimg {
+        position: relative;
+        left: -1px;
+        top: -10px;
+        box-shadow: inset 3px 3px 7px;
+        height: 48px;
+        width: 48px;
+    }
+
+    .topimg:hover {
+        box-shadow: 5px 5px 15px;
+        transition: .2s ease;
+    }
+
+    /* nav img {
+        position: relative;
+        left: 10px;
+        top: 8px;
+    } */
+    nav button {
+        background-color: #FAD;
+        margin: 20px;
+        border: 2px solid #FAD;
+        color: #F08;
+        border-radius: 6px;
+        height: 30px;
+        width: 57px;
+        top: 2px;
+        position: relative;
+        right: 15px;
+        text-align: center;
+        font-family: 'Shadows Into Light Two', cursive;
+        box-shadow: inset 3px 3px 7px;
+    }
+
+    nav button:hover {
+        box-shadow: 5px 5px 15px;
+        transition: .5s ease;
+    }
+
+    .h1 {
+        color: rgb(109, 23, 69);
+        font-family: 'Shadows Into Light Two', cursive;
+        position: relative;
+        left: 45vw;
+        font-size: 2vw;
+        /* text-shadow: 5px 5px 5px black; */
+    }
+    nav h1{
+        position: relative;
+        top: 1vh;
+    }
+    .h1:hover {
+        text-shadow: 5px 5px 9px white;
+        transition: .2s ease-in-out;
+    }
+
+    /* span{
+    width: 50px;
+    } */
+    .box1 {
+        width: 20vw;
+        height: 45vh;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        margin: 10px;
+        position: relative;
+        left: 5vw;
+        top: 5vh;
+        box-shadow: 5px 5px 5px;
+        object-fit: cover;
+        transition: .6s ease;
+    }
+
+    .box1:hover {
+        box-shadow: 5px 5px 15px white;
+        transition: .2s ease;
+    }
+
+    .container {
+        background-color: rgba(255, 0, 136, 0.596);
+        backdrop-filter: blur(1px);
+        /* height: 90vh; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 5vh;
+    }
+    footer {
+        background-color: black;
+        color: #FAD;
+        /* position: relative;
+        bottom: 0px; */
+        text-align: center;
+        font-family: 'Shadows Into Light Two', cursive;
+        font-size: 2vh;
+        z-index: 1;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content,
+    #caption {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0.1)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
